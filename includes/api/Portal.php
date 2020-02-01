@@ -73,7 +73,7 @@ abstract class Portal
         $newTarget = "http://172.16.42.1/success.php";
         if (isset($_POST['target']))
         {
-            $newTarget = $newTarget . "?target=" . $_POST['target']
+            $newTarget = $newTarget . "?target=" . $_POST['target'];
         }
 		$this->request->target = $newTarget;
         if (!$this->isClientAuthorized($clientIP)) {
