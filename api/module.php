@@ -118,7 +118,7 @@ class EvilPortal extends Module
     {
         if (substr($file, -strlen(".ep")) == ".ep")
             return false;
-        return !in_array($file, array("MyPortal.php", "default.php", "helper.php", "index.php"));
+        return !in_array($file, array("MyPortal.php", "default.php", "helper.php", "index.php", "success.php"));
     }
 
     /**
